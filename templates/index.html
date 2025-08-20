@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my preact</title>
+    <!--<link rel="stylesheet" href="index.css">-->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/signup.css') }}">
+
+</head>
+<body>
+    <div class="container-xxl">
+        <nav class="navbar">
+            <a href="" class="navbar-brand ">
+                <h1 class="text-primary"><i class="fa fa-utensils me-3"></i>RESTAURANT</h1>  
+            </a>
+            
+            <div class="collapse " id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="/order_table" class="nav-item nav-link">Order Table</a>
+                    <a href="/item" class="nav-item nav-link">Order_item</a>
+                    <a href="/reservation" class="nav-item nav-link">Show data</a>
+                    <a href="/detailes" class="nav-item nav-link">Cust_Details</a>
+                </div>
+                <button class="btn" onclick="window.location.href='/signup'">Sign up</button>
+            </div>
+        </nav>
+
+        <!-- <div class="container"> -->
+            <div class="container" >
+                <div class="row ">
+                    <div class="col">
+                        <h1 class="display-3">Enjoy Our<br>Delicious Meal</h1>
+                        <p class="text-white" style="padding: 15px; color: white;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet <br> diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit  <br>clita duo justo magna dolore erat amet</p>
+                        <button class="btn-1">Book a table</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="https://themewagon.github.io/restoran/img/hero.png" alt="">
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/signup.css') }}">
+  </head>
+  <body>
+    <nav class="navbar">
+        <a href="" class="navbar-brand ">
+            <h1 class="text-primary"><i class="fa fa-utensils me-3"></i>Restoran</h1>  
+        </a>
+        
+        <div class="collapse " id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="/" class="nav-item nav-link active">Home</a>
+                <a href="/order_table" class="nav-item nav-link">Order Table</a>
+                <a href="/reservation" class="nav-item nav-link">show data</a>
+                <a href="/reservation" class="nav-item nav-link">Reservation</a>
+                <a href="/detailes" class="nav-item nav-link">details</a>
+            </div>
+        </div>
+    </nav>
+<div class="maincontainer">
+    <div class="container1">
+      <h1>Order Table</h1>
+      <!-- {% with messages = get_flashed_messages() %} {% if messages %}
+      <ul class="flash-messages">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %} {% endwith %} -->
+
+      
+
+      <form action="/order_table" method="post">
+        <label for="cust_id">cust_name</label>
+        <input type="text" id="cust_id" name="cust_id" required />
+        <label for="order_date">order_date:</label>
+        <input type="date" id="order_date" name="order_date" required />
+        <label for="total_amount">total_amount:</label>
+        <input type="number" id="total_amount" name="total_amount" required />
+        <label for="Order_time">Order_time:</label>
+        <input type="time" id="Order_time" name="Order_time" required />
+        <label for="item_qty">item_qty:</label>
+        <input
+          type="number"
+          id="item_qty"
+          name="item_qty"
+          required
+        />
+        <button type="submit">Order table</button>
+
+        <!-- <button type="submit" onclick="window.location.href='index.html'">HOME</button>-->
+        <!-- <button
+          type="button"
+          onclick="window.location.href='{{ url_for('index') }}'"
+          {%
+          if
+          not
+          enable_login_button
+          %}disabled{%
+          endif
+          %}
+        >
+          HOME
+        </button> -->
+        
+      </form>
+    </div>
+    <div class="img">
+        <img class="img" src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/hero-img.png" alt="">
+    </div>
+</div>
+  </body>
+</html>

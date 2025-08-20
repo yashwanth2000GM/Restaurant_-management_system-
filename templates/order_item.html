@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/signup.css') }}">
+  </head>
+  <body>
+    <nav class="navbar">
+        <a href="" class="navbar-brand ">
+            <h1 class="text-primary"><i class="fa fa-utensils me-3"></i>Restoran</h1>  
+        </a>
+        
+        <div class="collapse " id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="/" class="nav-item nav-link active">Home</a>
+                <a href="/order_table" class="nav-item nav-link">Order Table</a>
+                <a href="/reservation" class="nav-item nav-link">Review</a>
+                <a href="/reservation" class="nav-item nav-link">Reservation</a>
+                <a href="/detailes" class="nav-item nav-link">details</a>
+            </div>
+        </div>
+    </nav>
+<div class="maincontainer">
+    <div class="container1">
+      <h1>Order_item</h1>
+      <!-- {% with messages = get_flashed_messages() %} {% if messages %}
+      <ul class="flash-messages">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %} {% endwith %} -->
+
+      
+
+      <form action="/item" method="post">
+        <label for="Item_name">Item_name:</label>
+        <input type="text" id="Item_name" name="Item_name" required />
+        <label for="sub_total">sub_total:</label>
+        <input
+          type="number"
+          id="sub_total"
+          name="sub_total"
+          required
+        />
+        <button type="submit">Order Now</button>
+
+        <!-- <button type="submit" onclick="window.location.href='index.html'">HOME</button>-->
+        <!-- <button
+          type="button"
+          onclick="window.location.href='{{ url_for('index') }}'"
+          {%
+          if
+          not
+          enable_login_button
+          %}disabled{%
+          endif
+          %}
+        >
+          HOME
+        </button> -->
+        
+      </form>
+    </div>
+    <div class="img">
+        <img class="img" src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/hero-img.png" alt="">
+    </div>
+</div>
+  </body>
+</html>

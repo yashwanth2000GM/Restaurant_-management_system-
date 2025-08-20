@@ -1,0 +1,102 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 283px;
+    width: 100%;
+    background-color: #0F172B;
+}
+.text-primary{
+   color: #FEA116; 
+}
+.navbar-nav a{
+    color: white;
+    text-decoration: none;
+}
+.navbar-nav a:hover{
+   color: #FEA116;
+}
+.navbar-nav{
+    display: flex;
+    gap: 50px;
+}
+.collapse{
+    display: flex;
+    gap: 50px;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+} 
+.btn-1{
+    border: 2px solid black;
+    background-color: #FEA116;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+    border: navajowhite;
+    padding: 17px;
+    width: 42%;
+    font-weight: bold;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    border: 2px solid black;
+    background-color: #FEA116;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+.navbar-brand h1{
+    font-family: "Nunito",sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    margin-left: 40px;
+    text-decoration: none;
+}
+body{
+    font-family: "Heebo",sans-serif;
+}
+.img-fluid{
+    height: 33em;   
+     
+}
+.col-lg-6 img{
+    animation: imgRotate 50s linear infinite;
+}
+.row{
+    display: flex;
+    gap: 57px;
+}
+.display-3{
+    font-size: 4em;
+    font-family: "Nunito",sans-serif;
+    color: white;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.col{
+    margin-left: 33px;
+}
+.container{
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(https://themewagon.github.io/restoran/img/bg-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 47px; */
+}
